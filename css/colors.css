@@ -1,0 +1,34 @@
+/*
+{
+    "Onyx":"2f323a",
+    "Davys Grey":"505053",
+    "Brunswick Green":"214534",
+    "Dartmouth Green":"07743b",
+    "Amazon":"427655",
+    "Honeydew":"ebf3e2",
+    "Eerie Black":"141414"
+}
+*/
+
+/*
+--onyx: #2f323aff;
+--davys-grey: #505053ff;
+--brunswick-green: #214534ff;
+--dartmouth-green: #07743bff;
+--amazon: #427655ff;
+--honeydew: #ebf3e2ff;
+--eerie-black: #141414ff;
+*/
+
+/* CSS HEX */
+:root {
+    --bg-primary: #505053ff;
+    --bg-secondary: #2f323aff;
+    --bg-hightlight: #427655ff;
+    
+    --highlight-light: #07743bff;
+    --highlight-dark: #214534ff;
+    
+    --text-primary: #ebf3e2ff;
+    --text-secondary: #141414ff;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mitos Games</title>
+        
+        <!-- Open Graph info-->
+        <meta property="og:title" content="Mitos Games web page" />
+        <meta property="og:url" content="www.mitosgames.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mitos Games web page" />
+        <meta property="og:image" content="http://mitos-drg.github.io/img/logoFullBig16d9.jpg" />
+        
+        <!-- CSS linking (mostly Bootstrap) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/colors.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <!-- Header (main page only) -->
+        <header class="header">
+            <video id="video-header" class="header" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="img/animatedlogo.mp4" type="video/mp4">
+            </video>
+        </header>
+        
+        <!-- Navbar (a.k.a. menu) -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Mitos Games</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglableMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu content -->
+            <div class="collapse navbar-collapse" id="togglableMenu">
+                <ul class="navbar-nav mr-4">
+                    <!--<li class="nav-item"><a href="#About" class="nav-link" data-value="About">About</a></li>-->
+                    <li class="nav-item"><a href="#Games" class="nav-link" data-value="Games">Games</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link" data-value="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Main Page body -->
+        <div class="container" id="Games">
+            
+            <h1 class="section-title text-center">My Games</h1>
+            
+            <!-- Voice TicTacToe -->
+            <div class="row">
+                <!-- Game logo -->
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <img src="img/gameicons/voicetictactoe.png" alt="Voice Tic-Tac-Toe Logo" class="img-fluid">
+                </div>
+                
+                <!-- Game Description -->
+                <div class="col-lg-8 col-md-8 col-sm-12 about">
+                    <h1 class="text-center">Voice Tic Tac Toe</h1>
+                    <p>
+                        Play the classical game of Tic Tac Toe with voice commands!<br>
+                        Play with a friend or computer with three difficulty levels. Perform your moves just by saying 
+                        simple commands to the app. Every command is built with simple pattern: firstly you say which sign 
+                        you would place and then where to place it.<br>
+                        The Voice Tic Tac Toe was made mostly for learning purposes (and to have fun!), so don't bother with 
+                        giving any feedback or suggestions. The game's source code is also available on GitHub. 
+                    </p>
+                    <a href="https://mitos.itch.io/voicetictactoe" class="btn btn-primary btn-lg">Get on itch.io!</a>
+                </div>
+            </div><!-- Voice TicTacToe End-->
+            
+            <!-- Hipercube -->
+            <div class="row">
+                <!-- Game logo -->
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <img src="img/gameicons/hipercube.png" alt="Hipercube Logo" class="img-fluid">
+                </div>
+                
+                <!-- Game Description -->
+                <div class="col-lg-8 col-md-8 col-sm-12 about">
+                    <h1 class="text-center">Hipercube</h1>
+                    <p>
+                        Can you find your way out of 4D maze?<br>
+                        Try your skills and spatial imagination with this complicated 4D game. Find shortest way to exit from 
+                        12 unique, carefully designed labirynths, or chill out and explore every nook of this weird construction.
+                        Experience full three dimensional freedom of movement, as you can slide or rotate along each of 3 axes and 
+                        watch how world changes around you when switching 4th coordinate.<br> 
+                    </p>
+                    <a href="https://mitos.itch.io/hipercube" class="btn btn-primary btn-lg">Buy on itch.io!</a>
+                </div>
+            </div> <!-- Hipercube End-->
+            
+        </div>
+        
+        <!-- About -->
+        
+        <div class="container" id="Contact">
+            <h1 class="section-title text-center">Contact</h1>
+            <div class="row contact">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="desc">
+                        <h3>Feel free to contact me:</h3>
+                        <span class="mail">mitos@mitosgames.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h3>Check my games:</h3>
+                    <a href="https://github.com/mitos-drg" target="_blank"><img class="contact-icon" src="img/brands/GitHub-Mark-Light-64px.png"></a>
+                    <a href="https://mitos.itch.io" target="_blank"><img class="contact-icon" src="img/brands/itchio-white.png"></a>
+                    
+                    <h3>Find me on social media:</h3>
+                    <a href="https://www.facebook.com/MitosGameDev" target="_blank"><img class="contact-icon" src="img/brands/f_logo_RGB-White_58.png"></a>
+                    <a href="https://www.youtube.com/channel/UChM1RHbpHN8J8FdZ_uo-IWw" target="_blank"><img class="contact-icon" src="img/brands/yt_icon_mono_dark.png"></a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer container text-center">
+            Copyright © Mitos Games 2021. All rights reserved.
+        </footer>
+        
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src='js/main.js'></script>
+    </body>
+</html>
