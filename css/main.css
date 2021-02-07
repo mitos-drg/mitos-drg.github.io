@@ -33,6 +33,10 @@ a, a:hover, a:focus, a:active {
 {
     color: var(--text-primary);
 }
+.navbar-brand:visited
+{
+    color: var(--text-primary);
+}
 
 .navbar-collapse
 {
