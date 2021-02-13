@@ -17,6 +17,7 @@
 .nav-link
 {
     margin-right: 1em !important;
+    padding-left: 0.5rem !important;
 }
 
 a, a:hover, a:focus, a:active {
@@ -41,11 +42,6 @@ a, a:hover, a:focus, a:active {
 .navbar-collapse
 {
     justify-content: center;
-}
-
-.navbar-toggler
-{
-    background:#aaa !important;
 }
 /* Navbar end */
 
@@ -164,6 +160,10 @@ body
     padding: 0 1em;
     font-size: larger;
     text-align: center;
+}
+.contact .desc
+{
+    padding-bottom: 5rem;
 }
 /* Main Page end */
 
