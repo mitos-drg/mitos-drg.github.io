@@ -144,9 +144,10 @@ body
 
 .contact-icon
 {
-    height: 4em;
+    height: 3em;
     width: auto;
-    margin: 0 1em;
+    vertical-align: text-bottom;
+    /* margin: 0 1em; */
 }
 
 .contact h3
@@ -164,6 +165,12 @@ body
 .contact .desc
 {
     padding-bottom: 5rem;
+}
+
+.space
+{
+    display: inline-block;
+    width: 1em;
 }
 /* Main Page end */
 
