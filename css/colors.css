@@ -22,13 +22,15 @@
 
 /* CSS HEX */
 :root {
-    --bg-primary: #505053ff;
-    --bg-secondary: #2f323aff;
+    --bg-primary: #3d4245ff;
+    --bg-secondary: #282b2cff;
     --bg-hightlight: #427655ff;
     
-    --highlight-light: #07743bff;
+    --highlight-light: #065d2fff;
     --highlight-dark: #214534ff;
+    --highlight-border: #7ef7b8ff;
     
     --text-primary: #ebf3e2ff;
+    --text-special: #7ef7b8ff;
     --text-secondary: #141414ff;
 }

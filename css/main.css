@@ -105,7 +105,7 @@ body
 
 .btn-primary
 {
-    border-color: var(--highlight-light);
+    border-color: var(--highlight-border);
     background: var(--highlight-light);
     color: var(--text-primary);
 }
@@ -118,7 +118,7 @@ body
 .section-title
 {
     font-size: 4em;
-    color: var(--highlight-light);
+    color: var(--text-special);
     margin: 1em;
 }
 
