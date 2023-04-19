@@ -182,3 +182,11 @@ body
     color: var(--text-primary);
 }
 /* Footer end */
+
+.no-space
+{
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
