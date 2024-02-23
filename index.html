@@ -1,217 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
     <head>
-        <!-- Main configurations -->
+        <!-- General meta tags -->
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- HTML Meta Tags -->
         <title>Mitos Games</title>
-        <link rel="icon" href="img/favicon.png" type="image/png"/>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
-        <meta name="viewport" content="width=device-width" />
-        
-        <!-- Open Graph info-->
-        <meta property="og:title" content="Mitos Games web page" />
-        <meta property="og:url" content="www.mitosgames.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mitos Games web page" />
-        <meta property="og:image" content="https://mitos-drg.github.io/img/logoFullBig16d9.jpg" />
-        
-        <!-- CSS linking (mostly Bootstrap) -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
-        <link rel="stylesheet" type="text/css" href="css/brands.css">
-        <link rel="stylesheet" type="text/css" href="css/colors.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <meta content="#1a5200" name="theme-color">
+
+        <!-- Jekyll SEO tags -->
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.4" />
+<meta property="og:title" content="Mitos Games" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mitos Games web page." />
+<meta property="og:description" content="Mitos Games web page." />
+<link rel="canonical" href="https://www.mitosgames.com/" />
+<meta property="og:url" content="https://www.mitosgames.com/" />
+<meta property="og:site_name" content="Mitos Games" />
+<meta property="og:image" content="https://www.mitosgames.com/assets/img/mitos/logo-banner.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.mitosgames.com/assets/img/mitos/logo-banner.jpg" />
+<meta property="twitter:title" content="Mitos Games" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Mitos Games web page.","headline":"Mitos Games","image":"https://www.mitosgames.com/assets/img/mitos/logo-banner.jpg","name":"Mitos Games","url":"https://www.mitosgames.com/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+        <!-- Bootstrap and CSS styling -->
+        <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/762e88c7f6.js" crossorigin="anonymous"></script>
     </head>
-    
     <body>
-        <!-- Header (main page only) -->
-        <header class="header">
-            <video id="video-header" class="header" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="img/animatedlogo.mp4" type="video/mp4">
-            </video>
-        </header>
-        
-        <!-- Navbar (a.k.a. menu) -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Mitos Games</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#togglableMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Menu content -->
-            <div class="collapse navbar-collapse" id="togglableMenu">
-                <ul class="navbar-nav mr-4">
-                    <!--<li class="nav-item"><a href="#About" class="nav-link" data-value="About">About</a></li>-->
-                    <li class="nav-item"><a href="#Games" class="nav-link" data-value="Games">Games</a></li>
-                    <li class="nav-item"><a href="#Contact" class="nav-link" data-value="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <!-- Main Page body -->
-        <div class="container" id="Games">
-            
-            <h1 class="section-title text-center">My Games</h1>
-            
-            <!-- Voice Chess -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/voicechess.png" alt="Voice Chess Logo" class="img-fluid">
-                </div>
-                
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 game-description">
-                    <h1 class="text-center">Voice Chess</h1>
-                    <p>
-                        <em>Voice Chess</em> is a simple take on the classical game of chess, where you command the game with your voice. It supports solo play and hot-seat mode, offering an accessible platform to refine chess skills through voice-controlled gameplay, simplifying moves and strategies without the need for traditional controls - so you can play your favorite game even when cooking or doing laundry!
-                    </p>
-                    <a href="https://mitos.itch.io/voicechess" class="btn btn-primary btn-lg">Get on itch.io!</a>
-                </div>
-            </div> <!-- Voice Chess End -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md bg-primary sticky-top" aria-label="Menu bar">
+    <div class="container">
+        <!-- TODO: Change to Mitos branding -->
+        <a class="navbar-brand col-3 me-0" href="#">
+            <img src="assets/img/mitos/logo-dragon-small.svg" alt="Mitos Dragon Logo" width="32"
+                height="32" class="d-inline-block align-text-top">
+            Mitos Games
+        </a>
+        <button data-bs-theme="dark" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Gallifreyan Scribe -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/gallifreyan.jpg" alt="Gallifreyan Scribe Logo" class="img-fluid">
-                </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav col-6 justify-content-center">
+                <!-- Fill all navigation links -->
                 
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 game-description">
-                    <h1 class="text-center">Gallifreyan Scribe</h1>
-                    <p>
-                        <em>The Gallifreyan Scribe</em> is a translator tool for <a href="https://shermansplanet.com/gallifreyan/">circular gallifreyan</a> by Loren Sherman inspired by the BBC TV show <em>Doctor Who</em>.
-                        It can transcribe words and sentences to circular gallifreyan and allows further customisation of them.
-                        <br>
-                        With this powerful tool you can quickly and conviniently generate cool-looking, timey-wimey designs for wallpapers, printing or your andventures in time and space RPG handouts!
-                    </p>
-                    <a href="https://mitos.itch.io/the-gallifreyan-scribe" class="btn btn-primary btn-lg">Try on itch.io!</a>
-                </div>
-            </div> <!-- Gallifreyan Scribe End -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Projects">Projects</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#About">About Me</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
 
-            <!-- MarbleTilt -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/marbletilt.png" alt="Marble Tilt Logo" class="img-fluid">
-                </div>
-                
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 game-description">
-                    <h1 class="text-center">Marble Tilt</h1>
-                    <p>
-                        <em>Marble Tilt</em> is a simple, casual game inspired by classic marble maze games. Use your dexterity and manipulate your phone as the dots reacts to the real gravity.
-                        <br>
-                        Complete all the levels belonging to varius sections. Each section has its own features like colour-splited obstacles, bouncing dots or walls. More new sections are coming soon!
-                        <br>
-                        To play <em>Marble Tilt</em> you need a device with accelerometer and touchscreen.
-                        The game only supports Android phones and tablets.
-                    </p>
-                    <a href="https://mitos.itch.io/marbletilt" class="btn btn-primary btn-lg">Get on itch.io!</a>
-                </div>
-            </div> <!-- MarbleTilt End -->
-            
-            <!-- Voice TicTacToe -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/voicetictactoe.png" alt="Voice Tic-Tac-Toe Logo" class="img-fluid">
-                </div>
-                
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 about">
-                    <h1 class="text-center">Voice Tic-Tac-Toe</h1>
-                    <p>
-                        Play the classical game of Tic Tac Toe with voice commands!<br>
-                        Play with a friend or computer with three difficulty levels. Perform your moves just by saying 
-                        simple commands to the app. Every command is built with simple pattern: firstly you say which sign 
-                        you would place and then where to place it.<br>
-                        The Voice Tic Tac Toe was made mostly for learning purposes (and to have fun!), so don't bother with 
-                        giving any feedback or suggestions. The game's source code is also available on GitHub. 
-                    </p>
-                    <a href="https://mitos.itch.io/voicetictactoe" class="btn btn-primary btn-lg">Get on itch.io!</a>
-                </div>
-            </div><!-- Voice TicTacToe End-->
-            
-            <!-- Gunslinger -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/gunslinger.png" alt="Gunslinger 2077 Logo" class="img-fluid">
-                </div>
-                
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 game-description">
-                    <h1 class="text-center">Gunslinger 2077</h1>
-                    <p>
-                        <em>Gunslinger 2077</em> is short, fast and simple game made for <a href="https://itch.io/jam/20-second-game-jam">20 second Game Jam 2022</a>. Draw your gun and prove that indeed you're the fastest gunslinger in the CyberSpace! Use your mouse to target and take down android outlaws one by one. But will you be quick enough to survive?
-                    </p>
-                    <a href="https://mitos.itch.io/gunslinger-2077" class="btn btn-primary btn-lg">Get on itch.io!</a>
-                </div>
-            </div> <!-- Gunslinger End -->
-            
-            <!-- Hipercube -->
-            <div class="row">
-                <!-- Game logo -->
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                    <img src="img/gameicons/hipercube.png" alt="Hipercube Logo" class="img-fluid">
-                </div>
-                
-                <!-- Game Description -->
-                <div class="col-lg-8 col-md-8 col-sm-12 about">
-                    <h1 class="text-center">Hipercube</h1>
-                    <p>
-                        Can you find your way out of 4D maze?<br>
-                        Try your skills and spatial imagination with this complicated 4D game. Find shortest way to exit from 
-                        12 unique, carefully designed labirynths, or chill out and explore every nook of this weird construction.
-                        Experience full three dimensional freedom of movement, as you can slide or rotate along each of 3 axes and 
-                        watch how world changes around you when switching 4th coordinate.<br> 
-                    </p>
-                    <a href="https://mitos.itch.io/hipercube" class="btn btn-primary btn-lg">Buy on itch.io!</a>
-                </div>
-            </div> <!-- Hipercube End-->
-            
-        </div>
+
+        <!-- Main site content -->
+        <main class="container py-3">
+            <!-- Welcome logo banner -->
+<div class="row">
+    <img src="assets/img/mitos/logo-banner.svg" alt="Mitos Games dragon logo" class="img-fluid w-100" />
+</div>
+
+<!-- Projects section -->
+<div class="row my-3 mw-lg mx-auto align-items-center" id="Projects">
+    <h1 class="col col-12 col-md-6 text-center text-primary text-decoration-underline my-3">Projects</h1>
+    <div class="col-6 col-md-3 order-md-first mx-0 px-0">
+        <img src="assets/img/mitos/wing-left.svg" alt="" class="img-fluid w-100" />
+    </div>
+    <div class="col-6 col-md-3 order-md-last mx-0 px-0">
+        <img src="assets/img/mitos/wing-right.svg" alt="" class="img-fluid w-100" />
+    </div>
+</div>
+
+
+    <h2 class="text-center d-md-none">The Gallifreyan Scribe</h2>
+<div class="row my-3 mx-auto mw-lg">
+    <div class="col col-12 col-md-4 my-2 text-center ">
+        <img class="img-fluid" src="assets/img/projects/gallifreyan.png" alt="Gallifreyan logo" />
+    </div>
+    <div class="col col-12 col-md-8 my-2">
+        <h2 class="text-start d-none d-md-block">The Gallifreyan Scribe</h2>
+        <hr class="d-none d-md-block">
+        <p>The <strong>Gallifreyan Scribe</strong> is a translator tool, which generates text in  <a href="https://shermansplanet.com/gallifreyan/">Circular Gallifreyan</a> by  <a href="https://shermansplanet.com">Loren Sherman</a>. Free and running in the browser – it is perfect to generate cool design inspired by BBC show <em>Doctor Who</em> for wallpapers or RPG handouts.</p>
+
         
-        <!-- About -->
         
-        <div class="container" id="Contact">
-            <h1 class="section-title text-center">Contact</h1>
-            <div class="row contact">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="desc">
-                        <h3>Feel free to contact me:</h3>
-                        <a class="mail" href="mailto:contact@mitosgames.com">contact@mitosgames.com</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h3>Check my games:</h3>
-                    <a href="https://github.com/mitos-drg" target="_blank"><i class="fab fa-3x fa-github"></i></a>
-                    <span class="space"></span>
-                    <a href="https://mitos.itch.io" target="_blank"><i class="fab fa-3x fa-itch-io"></i></a>
-                    
-                    <h3>Find me on social media:</h3>
-                    <a href="https://www.facebook.com/mitosgamescom" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
-                    <span class="space"></span>
-                    <a href="https://www.twitter.com/MitosGames2" target="_blank"><i class="fab fa-3x fa-twitter"></i></a>
-                    <span class="space"></span>
-                    <a href="https://www.youtube.com/channel/UChM1RHbpHN8J8FdZ_uo-IWw" target="_blank"><i class="fab fa-3x fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
+            <a class="btn btn-primary" href="https://mitos.itch.io/the-gallifreyan-scribe">Try at itch.io!</a>
         
-        <footer class="footer container text-center">
-            Copyright © Mitos Games 2021. All rights reserved.
-        </footer>
+    </div>
+</div>
+
+
+    <h2 class="text-center d-md-none">Marble Tilt</h2>
+<div class="row my-3 mx-auto mw-lg">
+    <div class="col col-12 col-md-4 my-2 text-center order-md-last">
+        <img class="img-fluid" src="assets/img/projects/marbletilt.png" alt="MarbleTilt logo" />
+    </div>
+    <div class="col col-12 col-md-8 my-2">
+        <h2 class="text-start d-none d-md-block">Marble Tilt</h2>
+        <hr class="d-none d-md-block">
+        <p><strong>Marble Tilt</strong> is a simple, casual game inspired by classic marble maze games. Use your dexterity and tilt your phone to lead all marbles to the target – the  game uses real-world gravity! Will you be able to complete all the levels?</p>
+
         
-        <div class="no-space"><a href="https://students.mimuw.edu.pl/~ww439108/">
-            <img src="https://students.mimuw.edu.pl/~ww439108/img/logo42.png" alt="Archiwum egzaminów Wiktor Wichrowski" style="width:42px;height:42px;">
-            </a> </div>
         
+            <a class="btn btn-primary" href="https://mitos.itch.io/marbletilt">Get on itch.io!</a>
+        
+    </div>
+</div>
+
+
+    <h2 class="text-center d-md-none">Voice Chess</h2>
+<div class="row my-3 mx-auto mw-lg">
+    <div class="col col-12 col-md-4 my-2 text-center ">
+        <img class="img-fluid" src="assets/img/projects/voicechess.png" alt="VoiceChess logo" />
+    </div>
+    <div class="col col-12 col-md-8 my-2">
+        <h2 class="text-start d-none d-md-block">Voice Chess</h2>
+        <hr class="d-none d-md-block">
+        <p>Play one of the most popular games of all times – chess! With the power of voice recognition, you can control pieces on virtual board just by verbal commands. Whether you are a seasoned player with high ranking or just a beginner, <strong>Voice Chess</strong> have something for you.</p>
+
+        
+        
+            <a class="btn btn-primary" href="https://mitos.itch.io/voicechess">Get on itch.io!</a>
+        
+    </div>
+</div>
+
+
+
+
+    
+
+
+<!-- About me section -->
+<div class="row my-3 mt-5 mw-lg mx-auto align-items-center" id="About">
+    <h1 class="col col-12 col-md-6 text-center text-primary text-decoration-underline my-3">About Me</h1>
+    <div class="col-6 col-md-3 order-md-first mx-0 px-0">
+        <img src="assets/img/mitos/wing-left.svg" alt="" class="img-fluid w-100" />
+    </div>
+    <div class="col-6 col-md-3 order-md-last mx-0 px-0">
+        <img src="assets/img/mitos/wing-right.svg" alt="" class="img-fluid w-100" />
+    </div>
+</div>
+<div class="row mw-md mx-auto">
+    <p>
+        Hello, I am Mikołaj Mijakowski sometimes also known as Mitos.
+        Currently, I'm a Mathematics student at the University of Warsaw.
+        I'm interested in (of course) mathematics, especially in a field of differential
+        geometry and projective spaces.
+        But my main passion is computer graphics – from its mathematical basis and theory of
+        curves, splines and other geometrical primitives and transformations to practical
+        implementations in game engines and interactive software.
+    </p>
+    <p>
+        I have about 7 years of experience working with various game engines.
+        My first projects were made in Unity, then I started experimenting with other
+        choices, such as Unreal Engine and Godot.
+        For the last 3 years I've been also playing directly with OpenGL and my own
+        rendering projects.
+    </p>
+    <p>
+        In my spare time I really enjoy reading books, mostly fantasy and science-fiction
+        or casually playing chess.
+        I'm also an avid player in tabletop role-playing games, and even sometimes a
+        Game Master too.
+    </p>
+</div>
+
+<!-- Contact section -->
+<div class="row my-3 mw-lg mx-auto align-items-center" id="Contact">
+    <h1 class="col col-12 col-md-6 text-center text-primary text-decoration-underline my-3">Contact and Links</h1>
+    <div class="col-6 col-md-3 order-md-first mx-0 px-0">
+        <img src="assets/img/mitos/wing-left.svg" alt="" class="img-fluid w-100" />
+    </div>
+    <div class="col-6 col-md-3 order-md-last mx-0 px-0">
+        <img src="assets/img/mitos/wing-right.svg" alt="" class="img-fluid w-100" />
+    </div>
+</div>
+<div class="row my-3 mw-md mx-auto justify-content-around"></div>
+<div class="row mw-md mx-auto">
+    <!-- Contacts -->
+    <div class="col col-md-6">
+        <h3 class="text-center">Contact information</h3>
+        <hr>
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-regular fa-envelope"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">e-mail</span><br />
+        <a href="mailto:contact@mitosgames.com">contact@mitosgames.com</a>
+    </p>
+</div>
+
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-facebook"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">Facebook</span><br />
+        <a href="https://www.facebook.com/mitosgamescom">Mitos Games</a>
+    </p>
+</div>
+
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-twitter"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">Twitter/X</span><br />
+        <a href="https://twitter.com/MitosGames2">@MitosGames2</a>
+    </p>
+</div>
+
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-discord"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">Discord</span><br />
+        <a href="https://">mitos.drg</a>
+    </p>
+</div>
+
+        
+    </div>
+    <!-- Links -->
+    <div class="col col-md-6">
+        <h3 class="text-center">My other links</h3>
+        <hr>
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-github"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">GitHub</span><br />
+        <a href="https://github.com/mitos-drg">mitos-drg</a>
+    </p>
+</div>
+
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-itch-io"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">itch.io</span><br />
+        <a href="https://mitos.itch.io">Mitos</a>
+    </p>
+</div>
+
+        
+            <div class="col py-2 d-flex justify-content-left">
+    <i class="fa-3x fa-fw text-primary fa-brands fa-youtube"></i>
+    <p class="d-inline-block mx-2 my-0">
+        <span class="text-muted underline">YouTube</span><br />
+        <a href="https://www.youtube.com/@mitos-games">@mitos-games</a>
+    </p>
+</div>
+
+        
+    </div>
+</div>
+
+<div class="d-none" id="ExternalLinks">
+    <a href="https://students.mimuw.edu.pl/~ww439108/">
+        <img src="https://students.mimuw.edu.pl/~ww439108/img/logo42.png" alt="Archiwum egzaminów Wiktor Wichrowski" style="width:42px;height:42px;">
+    </a>
+</div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <!-- TODO: Change to Mitos branding -->
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img class="bi" width="30" height="30" src="assets/img/mitos/logo-dragon-small.svg" />
+        </a>
+        <span class="mb-3 mb-md-0 text-secondary"><i class="fa-classic fa-copyright"></i> 2024 Mitos Games, all rights reserved</span>
+    </div>
+
+    <p class="col-md-4 justify-content-end text-secondary d-flex fst-italic">
+        Powered by&nbsp;<a href="https://jekylrb.com">Jekyll</a>.
+    </p>
+</footer>
+
+
         <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src='js/main.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
     </body>
 </html>
