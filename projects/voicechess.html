@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+    <head>
+        <!-- General meta tags -->
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- HTML Meta Tags -->
+        <title>Voicechess</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <meta content="#1a5200" name="theme-color">
+
+        <!-- Jekyll SEO tags -->
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.4" />
+<meta property="og:title" content="Voicechess" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Play one of the most popular games of all times – chess! With the power of voice recognition, you can control pieces on virtual board just by verbal commands. Whether you are a seasoned player with high ranking or just a beginner, Voice Chess have something for you." />
+<meta property="og:description" content="Play one of the most popular games of all times – chess! With the power of voice recognition, you can control pieces on virtual board just by verbal commands. Whether you are a seasoned player with high ranking or just a beginner, Voice Chess have something for you." />
+<link rel="canonical" href="https://www.mitosgames.com/projects/voicechess.html" />
+<meta property="og:url" content="https://www.mitosgames.com/projects/voicechess.html" />
+<meta property="og:site_name" content="Mitos Games" />
+<meta property="og:image" content="https://www.mitosgames.com/assets/img/projects/voicechess/voicechess.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.mitosgames.com/assets/img/projects/voicechess/voicechess.png" />
+<meta property="twitter:title" content="Voicechess" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Play one of the most popular games of all times – chess! With the power of voice recognition, you can control pieces on virtual board just by verbal commands. Whether you are a seasoned player with high ranking or just a beginner, Voice Chess have something for you.","headline":"Voicechess","image":"https://www.mitosgames.com/assets/img/projects/voicechess/voicechess.png","url":"https://www.mitosgames.com/projects/voicechess.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+        <!-- Bootstrap and CSS styling -->
+        <link href="/assets/css/styles.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/762e88c7f6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md bg-primary sticky-top" aria-label="Menu bar">
+    <div class="container">
+        <a class="navbar-brand col-3 me-0" href="/">
+            <img src="/assets/img/mitos/logo-dragon-small.svg" alt="Mitos Dragon Logo" width="32"
+                height="32" class="d-inline-block align-text-top">
+            Mitos Games
+        </a>
+        <button data-bs-theme="dark" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav col-9 justify-content-center">
+                <!-- Fill all navigation links -->
+                
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+        <!-- Main site content -->
+        <main class="container py-3">
+            <!-- Project banner -->
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="/assets/img/projects/voicechess/banner.png" alt="Voice Chess banner"/>
+                </div>
+            </div>
+
+            <!-- Project contents -->
+            <div class="row mw-lg my-3 mx-auto">
+                <!-- Project info and statistics -->
+                <div class="col col-md-4 order-md-last">
+                    <h2 class="bg-primary text-center p-2">Voice Chess</h2>
+                    <img class="img-fluid" src="/assets/img/projects/voicechess/icon.png" alt="Voice Chess icon" />
+
+                    <h3 class="text-center p-2 mt-2">Available on:</h3>
+                    <div class="d-grid gap-2">
+                        
+                            <a class="btn btn-primary" href="https://mitos.itch.io/voicechess" rel="external">itch.io &rarr;</a>
+                        
+                    </div>
+                </div>
+                <div class="col col-md-8">
+                    <p><em>Voice Chess</em> is a simple take on the classical game of chess, where you command the game with your voice. It supports solo play and hot-seat mode, offering an accessible platform to refine chess skills through voice-controlled gameplay, simplifying moves and strategies without the need for traditional controls - so you can play your favorite game even when cooking or doing laundry!</p>
+
+<h2 id="user-manual">User Manual</h2>
+
+<p>The move command structure is based of <a href="https://en.wikipedia.org/wiki/Portable_Game_Notation">Portable Game Notation (PGN)</a> for chess. It should be just as easy as simply reading PGN move strings, with this general template:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[PIECE] [FILE] [ROW] [captures] FILE ROW [promotes to PIECE] [check|mate] 
+</code></pre></div></div>
+
+<p>where:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">PIECE</code> is either <code class="language-plaintext highlighter-rouge">king</code>, <code class="language-plaintext highlighter-rouge">queen</code>, <code class="language-plaintext highlighter-rouge">rook</code>, <code class="language-plaintext highlighter-rouge">bishop</code>, <code class="language-plaintext highlighter-rouge">knight</code>. For pawn moves leave it empty (but <code class="language-plaintext highlighter-rouge">pawn</code> will also be recognized)</li>
+  <li><code class="language-plaintext highlighter-rouge">FILE</code> is a name of file on board (letters <code class="language-plaintext highlighter-rouge">A</code>-<code class="language-plaintext highlighter-rouge">H</code> or their code words from <a href="https://en.wikipedia.org/wiki/NATO_phonetic_alphabet">NATO phonetic alphabet</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">ROW</code> is a name of row on board (number between <code class="language-plaintext highlighter-rouge">1</code> and <code class="language-plaintext highlighter-rouge">8</code>)</li>
+  <li>Parts in square braces (<code class="language-plaintext highlighter-rouge">[</code> and <code class="language-plaintext highlighter-rouge">]</code>) are optional as in PGN description</li>
+</ul>
+
+<p>One special case is a castling, to perform it (when conditions are met) say:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">short castle</code> or <code class="language-plaintext highlighter-rouge">castle king side</code> for kingside castling</li>
+  <li><code class="language-plaintext highlighter-rouge">long castle</code> or <code class="language-plaintext highlighter-rouge">castle queen side</code> for queenside castling</li>
+</ul>
+
+<p>Squares on a chessboard are identified with standard algebraic notation:</p>
+
+<p><img src="/assets/img/projects/voicechess/board-reference.png" alt="board coordinates chart" class="img-fluid" /></p>
+
+<p>and a reference of chess pieces with their names:</p>
+
+<p><img src="/assets/img/projects/voicechess/piece-refrence.png" alt="piece names chart" class="img-fluid" /></p>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <!-- TODO: Change to Mitos branding -->
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img class="bi" width="30" height="30" src="/assets/img/mitos/logo-dragon-small.svg" />
+        </a>
+        <span class="mb-3 mb-md-0 text-secondary"><i class="fa-classic fa-copyright"></i> 2024 Mitos Games, all rights reserved</span>
+    </div>
+
+    <p class="col-md-4 justify-content-end text-secondary d-flex fst-italic">
+        Powered by&nbsp;<a href="https://jekylrb.com">Jekyll</a>.
+    </p>
+</footer>
+
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+    </body>
+</html>
