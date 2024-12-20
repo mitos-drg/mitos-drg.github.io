@@ -2,17 +2,20 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.mitosgames.com/projects/gallifreyan.html</loc>
-<lastmod>2024-03-24T17:23:59+01:00</lastmod>
+<lastmod>2024-12-20T19:13:41+01:00</lastmod>
 </url>
 <url>
 <loc>https://www.mitosgames.com/projects/marbletilt.html</loc>
-<lastmod>2024-03-24T17:23:59+01:00</lastmod>
+<lastmod>2024-12-20T19:13:41+01:00</lastmod>
 </url>
 <url>
 <loc>https://www.mitosgames.com/projects/voicechess.html</loc>
-<lastmod>2024-03-24T17:23:59+01:00</lastmod>
+<lastmod>2024-12-20T19:13:41+01:00</lastmod>
 </url>
 <url>
 <loc>https://www.mitosgames.com/</loc>
+</url>
+<url>
+<loc>https://www.mitosgames.com/smugglers-privacy.html</loc>
 </url>
 </urlset>
