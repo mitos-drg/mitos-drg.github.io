@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Accelerometer test</title>
+  </head>
+  <body>
+    <header></header>
+    <main><h1>Acceleration: <span id="accel"></span></h1></main>
+    <script>
+        let a = document.getElementById("accel");
+        let x = 0;
+        let y = 0;
+        let z = 0;
+        function registerMotionListener() {
+            window.ondevicemotion = function(event) {
+                if (event.acceleration.x === null) return
+                x = event.accelerationIncludingGravity.x
+                y = event.accelerationIncludingGravity.y
+                z = event.accelerationIncludingGravity.z
+
+                a.innerHTML = `${x} ${y} ${z}`;
+              }
+        }
+
+        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+            DeviceOrientationEvent.requestPermission().then(function(state) {
+                if (state === 'granted') registerMotionListener()
+            })
+        }
+        else {
+            registerMotionListener()
+        }
+    </script>
+  </body>
+</html>
