@@ -28,6 +28,7 @@
         registerMotionListener();
 
         function getPermission() {
+          console.log("Requesting permission...");
             DeviceOrientationEvent.requestPermission().then(function(state) {
                 if (state === 'granted') registerMotionListener()
             })
